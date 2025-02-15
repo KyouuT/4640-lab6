@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+export DEBIAN_FRONTEND=noninteractive
 # setup nginx configuration files
 sudo cp /tmp/web/nginx.conf /etc/nginx/sites-available/
 sudo unlink /etc/nginx/sites-enabled/*

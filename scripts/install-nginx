@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+export DEBIAN_FRONTEND=noninteractive
 # update server and install nginx
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install nginx -y
+sudo apt-get install -y nginx -o Dpkg::Options::="--force-confnew"
